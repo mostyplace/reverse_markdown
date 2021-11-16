@@ -5,5 +5,7 @@ module ReverseMarkdown
         node.to_s
       end
     end
+
+    register :span,     PassThrough.new
   end
 end

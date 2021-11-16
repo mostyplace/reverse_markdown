@@ -6,7 +6,7 @@ module ReverseMarkdown
         if content.strip.empty? || state[:already_italic]
           content
         else
-          "#{content[/^\s*/]}_#{content.strip}_#{content[/\s*$/]}"
+          "#{content[/^\s*/]}*#{content.strip}*#{content[/\s*$/]}"
         end
       end
     end
